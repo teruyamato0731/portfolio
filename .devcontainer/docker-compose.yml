@@ -1,0 +1,14 @@
+version: '3'
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      # Working
+      - ..:/workspaces/portfolio:cached
+    working_dir: /workspaces/portfolio
+    tty: true
+    command: [scripts/server-start.bash]
+    ports:
+      - 8000:8000

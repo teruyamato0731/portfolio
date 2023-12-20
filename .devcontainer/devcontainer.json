@@ -1,0 +1,14 @@
+{
+	"name": "portfolio",
+	"dockerComposeFile": [
+		"docker-compose.yml"
+	],
+	"service": "portfolio",
+	"workspaceFolder": "/workspaces/portfolio",
+	"remoteUser": "vscode"
+	// "customizations": {
+	// 	"vscode": {
+	// 		"extensions": []
+	// 	}
+	// }
+}
