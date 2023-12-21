@@ -14,7 +14,7 @@ body>header {
 nav.hamburger-button {
   display: none;
 
-  @media (max-width: 720px) {
+  @media (max-width: 850px) {
     display: grid;
     place-items: center;
   }
@@ -52,7 +52,7 @@ nav.in-page {
   column-gap: 3px;
   display: grid;
 
-  @media (max-width: 720px) {
+  @media (max-width: 850px) {
     display: none;
 
     nav.hamburger-button:has(input[type='checkbox']:checked)~& {
