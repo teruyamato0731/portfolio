@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
   <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
   <title>Yoshikawa Teru | 高専ロボコン2023</title>
 </head>
+
 <body>
   <header>
     <h1>高専ロボコン2023「鴉」</h1>
@@ -17,18 +21,131 @@
       </label>
     </nav>
     <nav class="in-page">
-      <a href="#"></a>
+      <a href="#About">About</a>
+      <a href="#Robot">Robot</a>
+      <a href="#local">地区</a>
+      <a href="#national">全国</a>
     </nav>
   </header>
-  <section>
-    <h2>高専ロボコン2023</h2>
-    <img src="./img/robot.jpg" alt="優勝ロボット" width="200px">
-  </section>
-  <section>
-    <h2>やったこと</h2>
-  </section>
-  <section>
-    <h2></h2>
-  </section>
+  <div class="main">
+    <section id="About">
+      <h2>高専ロボコン</h2>
+      <p>
+        高専ロボコンとは、全国の高専学生が、毎年異なる競技課題に対し、アイデアを駆使してロボットを製作し、競技を通じてその成果を競う全国規模の教育イベントです。
+        高専ロボコン2023の競技テーマは「もぎもぎ！ フルーツＧＯラウンド」で、フルーツを模したボールをロボットで摘み取り、回転するフルーツスポットに投げ入れるというものでした。
+      </p>
+      <p>
+        競技課題は、2分半の間に角材とロープをくぐり抜ける2カ所の障害物エリアを越えてフルーツに見立てたボールをより多く収穫することを目指します。ロボットの制限高さを越える位置にあるフルーツの収穫や、2周目以降に使うことができるお助けアイテムをいかに活用するか、アイデアの見せどころです。
+        センターゾーンにあるフルーツの配点が高くなっているため、センターゾーンの戦いが重要となります。
+      </p>
+      <p>
+        私は大阪公立大学工業高等専門学校のチーム「鴉」のピットメンバーとして、高専ロボコン2023に参加しました。
+        私がチーム内で果たした役割はマイコンのプログラム担当と無線管理責任者です。
+      </p>
+      <p>
+        高専ロボコン2023の全国大会は11月26日に両国国技館で開催され、全国の8地区から選ばれた24校が参加しました。
+        大阪公立大学工業高等専門学校は、決勝戦で熊本八代高等専門学校を破り、初の全国優勝を果たしました。
+      </p>
+      <img src="./img/crow.png" alt="プロジェクト「鴉」のロゴ" width="200px">
+    </section>
+    <section id="Robot">
+      <h2>制作したロボット</h2>
+      <p>
+        「鴉」の特徴は圧倒的スピード, 制御による安定性, そして展開機構です。
+        「鴉」の足回りは独立ステアリングを使用しており、他高専の追随を許さない圧倒的スピードを誇ります。
+        他高専が一般的に1分でセンターゾーンに侵入する中、私たちの制作したロボットは32秒でセンターゾーンに進入することができます。
+        また高性能な光学センサ(LiDAR)を使用した自動ロープ補正機能により、最高スピードを維持したままロープに引っかかることなく、くぐり抜けることができます。
+        最速でセンターゾーンに進入した後は11段ロジャーにより3mの高さまで展開して、高所に設置されたフルーツを回収します。
+      </p>
+      <img src="./img/robot2.jpg" alt="優勝ロボット" width="200px">
+      <img src="./img/robot3.jpg" alt="優勝ロボット" width="200px">
+    </section>
+    <!-- <section>
+      <h2>制作過程</h2>
+      <p>
+        アイデア出し
+        自動化
+      </p>
+      <p>
+        システム設計
+      </p>
+      <p>
+        足回り制御
+      </p>
+      <p>
+        機構制御
+      </p>
+      <p>
+        全国大会で優勝するまでに、どのような試行錯誤や工夫をしましたか？ ロボットの設計や改良、チームワークや戦略などについて具体的に説明してください。
+        制御の安定性向上
+        無線管理責任者
+      </p>
+      <p>
+        高専ロボコン2023に参加したことで、あなたは何を学びましたか？ ロボット工学やプログラミング、コミュニケーションやリーダーシップなどに関する知識やスキル、感想や反省などを述べてください。
+        マイコン
+        移動ロボットの制御
+        古典制御理論
+        Wi-Fiの通信規格 安定させる方法
+        チームリーダーを支える
+        システム設計
+        CANネットワークの構築
+        目標達成のための思考・行動プロセス
+      </p>
+    </section> -->
+    <section id="local">
+      <h2>地区大会</h2>
+      <p>
+        高専ロボコン2023の地区大会は10月8日に神戸市立中央体育館で開催され、2府4県から7校14チームが参加しました。
+      </p>
+    </section>
+    <section id="national">
+      <h2>全国大会</h2>
+      高専ロボコン2023の全国大会は11月26日に両国国技館で開催され、全国の8地区から選ばれた24校が参加しました。
+      <img src="./img/robot.jpg" alt="優勝ロボット" width="200px">
+      <img src="./img/robocon2023_win.jpg" alt="優勝の瞬間" width="200px">
+    </section>
+    <section>
+      <h2>決勝戦 大阪公大 vs 熊本八代</h2>
+      <div style="display: grid; place-content: center;">
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/dDdRVrF7438?si=wMUnVTizn3wDy_cY&amp;start=21130"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+    <section>
+      <ul>
+        <li><a href="https://official-robocon.com/kosen/">https://official-robocon.com/kosen/</a></li>
+        <li><a
+            href="https://official-robocon.com/robocon_wp/wordpress/wp-content/uploads/2023/12/%E9%AB%98%E5%B0%82%E3%83%AD%E3%83%9C%E3%82%B3%E3%83%B32023%E5%85%A8%E5%9B%BD%E5%A4%A7%E4%BC%9A%E7%B5%90%E6%9E%9C.pdf">競技結果PDF</a>
+        </li>
+        <li><a href="https://www.ct.omu.ac.jp/info/news/entry-40890.html">高専ロボコン2023 全国大会優勝</a></li>
+      </ul>
+    </section>
+    <section>
+      <nav>
+        <h2>Links</h2>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="./about.html">About me</a></li>
+          <li><a href="./robocon2023.html">高専ロボコン2023全国優勝</a></li>
+          <li><a href="./kisoken.html">2023年研究</a></li>
+          <li><a href="./chassis.html">Chassis</a></li>
+          <li><a href="#">TOPへ戻る</a></li>
+        </ul>
+      </nav>
+    </section>
+  </div>
+  <footer>
+    <!-- TODO 見た目 -->
+    <span style="margin: auto;">Copyright © 2023 Yoshikawa Teru</span>
+    <address>
+      <a href="https://github.com/teruyamato0731" aria-label="Go to GitHub"><i class="fa-brands fa-github"
+          title="GitHub"></i></a>
+      <a href="https://twitter.com/teruyamato0731"><i class="fa-brands fa-x-twitter" title="X"></i></a>
+    </address>
+  </footer>
 </body>
+
 </html>

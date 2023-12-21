@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
   <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
   <title>Yoshikawa Teru | About</title>
 </head>
+
 <body>
   <header>
     <h1>About me</h1>
@@ -22,62 +26,107 @@
       <a href="#Accomplishments">Accomplishments</a>
     </nav>
   </header>
-  <section id="About">
-    <h2>About</h2>
-  </section>
-  <section id="Skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>組み込み</li>
-      <li>  Arduino Mbed</li>
-      <li>  C/C++</li>
-      <li>  ROS2</li>
-      <li>Web</li>
-      <li>  HTML CSS</li>
-      <li>  JS/TS</li>
-      <li>  React/Next.js</li>
-      <li>  PHP SQL</li>
-      <li>CI/CD</li>
-      <li>  Docker</li>
-      <li>  GitHub Action</li>
-      <li>  Python</li>
-      <li>  bash</li>
-      <li>Tool</li>
-      <li>  Creo KiCad</li>
-      <li>  VS Code, Arduino IDE, Platform IO</li>
-      <li>  旋盤</li>
-      <li>  ボール盤</li>
-      <li>  はんだ</li>
-    </ul>
-  </section>
-  <section id="Accomplishments">
-    <h2>Accomplishments</h2>
-    <ul>
-      <li>英検2級</li>
-      <li>漢検2級</li>
-    </ul>
-  </section>
-  <section>
-    <nav>
-      <h2>Links</h2>
+  <div class="main">
+    <section id="About">
+      <h2>About</h2>
+      <div>
+        <table>
+          <tr>
+            <td>Name</td>
+            <td>
+              <span>吉川 輝</span>
+              <span>（Yoshikawa&nbsp;Teru）</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Birthday</td>
+            <td>
+              <span>2004-07-31</span>
+              <span>（19歳）</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Interest</td>
+            <td>プログラミング</td>
+          </tr>
+        </table>
+        <p>
+          2020年に大阪公立大学工業高等専門学校へ入学。現在は4年メカトロニクスコースに在籍しています。
+          また高専入学後に所属した「ろぼっと倶楽部」では、高専ロボコン全国優勝のため、プログラムを書いてチームに貢献してきました。
+        </p>
+        <img src="./img/Teru2.jpg" alt="吉川 輝">
+        <img src="./img/Teru1.jpg" alt="吉川 輝">
+      </div>
+    </section>
+    <section id="Skills">
+      <h2>Skills</h2>
       <ul>
-        <li><a href="./about.html">About me</a></li>
-        <li><a href="./robocon2023.html">高専ロボコン2023全国優勝</a></li>
-        <li><a href="./kisoken.html">2023年研究</a></li>
-        <li><a href="./chassis.html">Chassis</a></li>
-        <li><a href="#">TOPへ戻る</a></li>
-        <li><a href="./">Home</a></li>
+        <li>組み込み
+          <ul>
+            <li>Arduino Mbed</li>
+            <li>C/C++</li>
+            <li>ROS2</li>
+          </ul>
+        </li>
+        <li>Web
+          <ul>
+            <li>HTML CSS</li>
+            <li>JS/TS</li>
+            <li>React/Next.js</li>
+            <li>PHP SQL</li>
+          </ul>
+        </li>
+        <li>CI/CD
+          <ul>
+            <li>Docker</li>
+            <li>GitHub Action</li>
+            <li>Python</li>
+            <li>bash</li>
+          </ul>
+        </li>
+        <li>Tool
+          <ul>
+            <li>Creo</li>
+            <li>KiCad</li>
+            <li>VS Code / Arduino IDE / Platform IO</li>
+            <li>旋盤</li>
+            <li>ボール盤</li>
+            <li>はんだ</li>
+          </ul>
+        </li>
       </ul>
-    </nav>
-  </section>
+    </section>
+    <section id="Accomplishments">
+      <h2>Accomplishments</h2>
+      <ul>
+        <li>英検2級</li>
+        <li>漢検2級</li>
+      </ul>
+    </section>
+    <section>
+      <nav>
+        <h2>Links</h2>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="./about.html">About me</a></li>
+          <li><a href="./robocon2023.html">高専ロボコン2023全国優勝</a></li>
+          <li><a href="./kisoken.html">2023年研究</a></li>
+          <li><a href="./chassis.html">Chassis</a></li>
+          <li><a href="#">TOPへ戻る</a></li>
+        </ul>
+      </nav>
+    </section>
+  </div>
   <footer>
     <!-- TODO 見た目 -->
     <span style="margin: auto;">Copyright © 2023 Yoshikawa Teru</span>
     <address>
-      <a href="https://github.com/teruyamato0731" aria-label="Go to GitHub"><i class="fa-brands fa-github" title="GitHub"></i></a>
+      <a href="https://github.com/teruyamato0731" aria-label="Go to GitHub"><i class="fa-brands fa-github"
+          title="GitHub"></i></a>
       <a href="https://twitter.com/teruyamato0731"><i class="fa-brands fa-x-twitter" title="X"></i></a>
     </address>
   </footer>
 </body>
 </body>
+
 </html>
