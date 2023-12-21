@@ -61,10 +61,22 @@ a {
   border-bottom: 1.5px dashed;
   transition: color 0.5s;
   transition: background-color 0.5s;
+
+}
+
+a[href^="http"]::after {
+  font: var(--fa-font-solid);
+  content: "\f08e";
+  padding-left: 0.4em;
+}
+
+a[href$=".pdf"]::after {
+  font: var(--fa-font-regular);
+  content: "\f1c1";
+  padding-left: 0.4em;
 }
 
 a:hover {
-  /* color: white; */
   background-color: var(--theme-color-1);
   border-radius: 4px;
   border-bottom: none;
