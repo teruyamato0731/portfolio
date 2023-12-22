@@ -201,3 +201,28 @@ section#Career article {
 h4 {
   margin: 0;
 }
+
+#to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 100%;
+
+  & a {
+    display: grid;
+    place-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+
+    &:not(:hover) {
+      background-color: #0067C0;
+    }
+
+    &::after {
+      font: var(--fa-font-solid);
+      content: "\f106";
+      color: #fff;
+    }
+  }
+}
