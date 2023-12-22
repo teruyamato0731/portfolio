@@ -64,7 +64,7 @@ a {
 
 }
 
-a[href^="http"]::after {
+a[href^="http"]:not(.no-link-icon):after {
   font: var(--fa-font-solid);
   content: "\f08e";
   padding-left: 0.4em;
