@@ -1,0 +1,13 @@
+section#Achievement {
+  &>div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 400px));
+    row-gap: 10px;
+    column-gap: 10px;
+    margin: auto;
+
+    & img {
+      max-width: 100%;
+    }
+  }
+}
