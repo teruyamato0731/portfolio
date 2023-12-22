@@ -61,10 +61,9 @@ a {
   border-bottom: 1.5px dashed;
   transition: color 0.5s;
   transition: background-color 0.5s;
-
 }
 
-a[href^="http"]:not(.no-link-icon):after {
+a[href^="http"]:not(.no-link-icon):not(.to-github):not(.to-x-twitter)::after {
   font: var(--fa-font-solid);
   content: "\f08e";
   padding-left: 0.4em;
@@ -74,6 +73,16 @@ a[href$=".pdf"]::after {
   font: var(--fa-font-regular);
   content: "\f1c1";
   padding-left: 0.4em;
+}
+
+a.to-github::after {
+  font: var(--fa-font-brands);
+  content: "\f09b";
+}
+
+a.to-x-twitter::after {
+  font: var(--fa-font-brands);
+  content: "\e61b";
 }
 
 a:hover {
