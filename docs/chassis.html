@@ -22,18 +22,44 @@
     </nav>
     <nav class="in-page">
       <a href="#About">About</a>
+      <a href="#Features">Features</a>
+      <a href="#Environment">Environment</a>
     </nav>
   </header>
   <div class="main">
     <section id="About">
       <h2>About</h2>
       <p>
-        3年生の時にロボコンで使用するために自作したOSSです。
+        高専在学中にロボコンで使用するために自作したOSSです。
+        MITライセンスで公開しています。
       </p>
+      <div>
+        <video controls playsinline muted autoplay style="max-width: 100%;" src="./img/4wd.mp4"></video>
+      </div>
       <p>
         Chassisはロボコンでの足回り制御を行うためのC++ライブラリである。 ロボコン用足回りのモータ出力計算と自己位置推定による自動制御をサポートする。
       </p>
       <a target="_blank" href="https://teruyamato0731.github.io/Chassis/">https://teruyamato0731.github.io/Chassis/</a>
+    </section>
+    <section id="Features">
+      <h2>Features</h2>
+      <ul>
+        <li>三輪オムニや四輪オムニ、メカナム、四輪独立ステアリングなどのモータ出力計算に対応。</li>
+        <li>エンコーダのオドメトリを用いた自己位置推定に対応。</li>
+        <li>
+          <span>自己位置推定とPID制御による自動制御に対応。</span>
+          <span>自己位置推定は任意のセンサとフィルタの組み合わせで実装できる。</span>
+        </li>
+      </ul>
+      </p>
+    </section>
+    <section id="Environment">
+      <h2>Supported Environment</h2>
+      <ul>
+        <li>Platform IO の入った VSCode。もしくは Arduino IDE。</li>
+        <li>C++で動くフレームワークとマイコン。</li>
+        <li>ArduinoやMbedで動くnucleo, esp32, teensyなどに対応。</li>
+      </ul>
     </section>
   </div>
   <div id="to-top">
