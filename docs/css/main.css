@@ -153,9 +153,11 @@ h4 {
     width: 35px;
     height: 35px;
     border-radius: 100%;
+    background-color: gray;
+    border: lightgray 1px solid;
 
-    &:not(:hover) {
-      background-color: var(--theme-color-3);
+    &:hover {
+      background-color: lightgray;
     }
 
     &::after {
