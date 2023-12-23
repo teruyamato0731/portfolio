@@ -90,6 +90,11 @@ section#Works>div {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   column-gap: 3px;
 
+  & a h4 {
+    background-color: inherit;
+    padding: 0.5em;
+  }
+
   & article img {
     min-width: 240px;
     width: 100%;

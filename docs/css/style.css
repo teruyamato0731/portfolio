@@ -93,6 +93,15 @@ a:hover {
   border-bottom: none;
 }
 
+a img {
+  transition: all 0.5s;
+
+  &:hover {
+    transform: scale(1.05, 1.05);
+    transition: all 0.5s;
+  }
+}
+
 .icon::before {
   /* removed font- based rules */
   display: inline-block;
