@@ -92,6 +92,7 @@ section#Works>div {
 
   & a h4 {
     background-color: inherit;
+    border-radius: inherit;
     padding: 0.5em;
   }
 
