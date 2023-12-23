@@ -78,11 +78,13 @@ a[href$=".pdf"]::after {
 a.to-github::after {
   font: var(--fa-font-brands);
   content: "\f09b";
+  font-size: 150%;
 }
 
 a.to-x-twitter::after {
   font: var(--fa-font-brands);
   content: "\e61b";
+  font-size: 150%;
 }
 
 a:hover {

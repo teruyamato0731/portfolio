@@ -42,6 +42,13 @@
         私は大阪公立大学工業高等専門学校のチーム「鴉」のピットメンバーとして、高専ロボコン2023に参加しました。
         私がチーム内で果たした役割はマイコンのプログラム担当と無線管理責任者です。
       </p>
+      <!-- <p>
+        半年間
+        12人チーム
+        機械7人
+        回路2人
+        プログラム3人
+      </p> -->
       <p>
         高専ロボコン2023の全国大会は11月26日に両国国技館で開催され、全国の8地区から選ばれた24校が参加しました。
         大阪公立大学工業高等専門学校は、決勝戦で熊本八代高等専門学校を破り、初の全国優勝を果たしました。
@@ -57,23 +64,34 @@
         また高性能な光学センサ(LiDAR)を使用した自動ロープ補正機能により、最高スピードを維持したままロープに引っかかることなく、くぐり抜けることができます。
         最速でセンターゾーンに進入した後は11段ロジャーにより3mの高さまで展開して、高所に設置されたフルーツを回収します。
       </p>
-      <img src="./img/robot2.jpg" alt="優勝ロボット" width="200px">
-      <img src="./img/robot3.jpg" alt="優勝ロボット" width="200px">
+      <div>
+        <img src="./img/robot2.jpg" alt="優勝ロボット" width="200px">
+        <img src="./img/robot3.jpg" alt="優勝ロボット" width="200px">
+      </div>
     </section>
     <!-- <section>
       <h2>制作過程</h2>
       <p>
+        4月に今年度のルール発表
         アイデア出し
         自動化
+        RealSense 点群処理 フルーツ座標認識
       </p>
       <p>
         システム設計
       </p>
       <p>
         足回り制御
+        新規センサ
+        アブソリュートエンコーダ
+        DJI社製ブラシレスモータm3508のドライバC620の制御
+        ジャイロセンサ
       </p>
       <p>
         機構制御
+        PID制御
+        目標値フィルタ
+        フィードフォワード制御 重力補償
       </p>
       <p>
         全国大会で優勝するまでに、どのような試行錯誤や工夫をしましたか？ ロボットの設計や改良、チームワークや戦略などについて具体的に説明してください。
@@ -96,13 +114,17 @@
       <h2>地区大会</h2>
       <p>
         高専ロボコン2023の地区大会は10月8日に神戸市立中央体育館で開催され、2府4県から7校14チームが参加しました。
+        私たちのチームは近畿地区優勝を果たした和歌山高専に敗れてしまいましたが、アイデア賞を受賞しました。
       </p>
     </section>
     <section id="national">
       <h2>全国大会</h2>
       高専ロボコン2023の全国大会は11月26日に両国国技館で開催され、全国の8地区から選ばれた24校が参加しました。
-      <img src="./img/robot.jpg" alt="優勝ロボット" width="200px">
-      <img src="./img/robocon2023_win.jpg" alt="優勝の瞬間" width="200px">
+      大阪公立大学工業高等専門学校は、決勝戦で熊本八代高等専門学校を破り、初の全国優勝を果たしました。
+      <div>
+        <img src="./img/robot.jpg" alt="優勝ロボット" width="200px">
+        <img src="./img/robocon2023_win.jpg" alt="優勝の瞬間" width="200px">
+      </div>
     </section>
     <section>
       <h2>決勝戦 大阪公大 vs 熊本八代</h2>
@@ -123,26 +145,24 @@
         </li>
       </ul>
     </section>
-    <section>
-      <nav>
-        <h2>Links</h2>
-        <ul>
-          <li><a href="./">Home</a></li>
-          <li><a href="./about.html">About me</a></li>
-          <li><a href="./robocon2023.html">高専ロボコン2023全国優勝</a></li>
-          <li><a href="./kisoken.html">2023年研究</a></li>
-          <li><a href="./chassis.html">Chassis</a></li>
-        </ul>
-      </nav>
-    </section>
   </div>
   <div id="to-top">
     <a href="#"></a>
   </div>
   <footer>
-    <!-- TODO 見た目 -->
-    <span style="margin: auto;">Copyright © 2023 Yoshikawa Teru</span>
+    <nav>
+      <h4>
+        <a href="./">Yoshikawa Teru</a>
+      </h4>
+      <ul style="margin-top: 0;">
+        <li><a href="./about.html">About me</a></li>
+        <li><a href="./robocon2023.html">高専ロボコン2023全国優勝</a></li>
+        <li><a href="./kisoken.html">2023年研究</a></li>
+        <li><a href="./chassis.html">Chassis</a></li>
+      </ul>
+    </nav>
     <address>
+      <span>Copyright © 2023 Yoshikawa Teru</span>
       <a target="_blank" class="to-github" href="https://github.com/teruyamato0731" aria-label="Go to GitHub"></a>
       <a target="_blank" class="to-x-twitter" href="https://twitter.com/teruyamato0731"></a>
     </address>

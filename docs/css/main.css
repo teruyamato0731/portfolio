@@ -18,12 +18,33 @@ body>div.main {
   max-width: calc(100vw - 60px);
 }
 
-footer {
+body>footer {
   background-color: grey;
   display: grid;
-  grid-template-columns: 1fr auto;
-  margin-top: 1em;
-  padding: 0.5em 30px;
+  grid-template-columns: auto 1fr;
+  margin-top: 0.5em;
+  padding: 1em 30px 0.5em;
+
+  & a {
+    color: #454545;
+  }
+
+  & address {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, auto);
+    column-gap: 10px;
+    margin-top: auto;
+    margin-bottom: 0.5em;
+  }
+
+  & span {
+    display: grid;
+    place-content: center;
+  }
+
+  @media (max-width: 650px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 nav.hamburger-button {

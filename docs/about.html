@@ -10,6 +10,7 @@
   <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
   <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
   <link href="css/index.css" rel="stylesheet" type="text/css" media="all">
+  <script src="js/script.js" async></script>
   <title>Yoshikawa Teru | About</title>
 </head>
 
@@ -31,26 +32,22 @@
     <section id="About">
       <h2>About</h2>
       <div>
-        <table>
-          <tr>
-            <td>Name</td>
-            <td>
-              <span>吉川 輝</span>
-              <span>（Yoshikawa&nbsp;Teru）</span>
-            </td>
-          </tr>
-          <tr>
-            <td>Birthday</td>
-            <td>
-              <span>2004-07-31</span>
-              <span>（19歳）</span>
-            </td>
-          </tr>
-          <tr>
-            <td>Interest</td>
-            <td>プログラミング</td>
-          </tr>
-        </table>
+        <div>
+          <header>Name</header>
+          <span>
+            <span>吉川 輝</span>
+            <span>（Yoshikawa&nbsp;Teru）</span>
+          </span>
+          <header>Birthday</header>
+          <span>
+            <span><time id="birthday" datetime="2004-07-31">2004-07-31</time></span>
+            <span id="age"></span>
+          </span>
+          <header>Interest</header>
+          <span>
+            <span>プログラミング</span>
+          </span>
+        </div>
         <p>
           2020年に大阪公立大学工業高等専門学校へ入学。現在は4年メカトロニクスコースに在籍しています。
           また高専入学後に所属した「ろぼっと倶楽部」では、高専ロボコン全国優勝のため、プログラムを書いてチームに貢献してきました。
@@ -104,26 +101,24 @@
         <li>漢検2級</li>
       </ul>
     </section>
-    <section>
-      <nav>
-        <h2>Links</h2>
-        <ul>
-          <li><a href="./">Home</a></li>
-          <li><a href="./about.html">About me</a></li>
-          <li><a href="./robocon2023.html">高専ロボコン2023全国優勝</a></li>
-          <li><a href="./kisoken.html">2023年研究</a></li>
-          <li><a href="./chassis.html">Chassis</a></li>
-        </ul>
-      </nav>
-    </section>
   </div>
   <div id="to-top">
     <a href="#"></a>
   </div>
   <footer>
-    <!-- TODO 見た目 -->
-    <span style="margin: auto;">Copyright © 2023 Yoshikawa Teru</span>
+    <nav>
+      <h4>
+        <a href="./">Yoshikawa Teru</a>
+      </h4>
+      <ul style="margin-top: 0;">
+        <li><a href="./about.html">About me</a></li>
+        <li><a href="./robocon2023.html">高専ロボコン2023全国優勝</a></li>
+        <li><a href="./kisoken.html">2023年研究</a></li>
+        <li><a href="./chassis.html">Chassis</a></li>
+      </ul>
+    </nav>
     <address>
+      <span>Copyright © 2023 Yoshikawa Teru</span>
       <a target="_blank" class="to-github" href="https://github.com/teruyamato0731" aria-label="Go to GitHub"></a>
       <a target="_blank" class="to-x-twitter" href="https://twitter.com/teruyamato0731"></a>
     </address>
