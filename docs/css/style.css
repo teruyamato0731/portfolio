@@ -79,12 +79,14 @@ a.to-github::after {
   font: var(--fa-font-brands);
   content: "\f09b";
   font-size: 150%;
+  padding: 5px;
 }
 
 a.to-x-twitter::after {
   font: var(--fa-font-brands);
   content: "\e61b";
   font-size: 150%;
+  padding: 5px;
 }
 
 a:hover {

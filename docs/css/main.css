@@ -25,21 +25,31 @@ body>footer {
   margin-top: 0.5em;
   padding: 1em 30px 0.5em;
 
-  & a {
-    color: #454545;
+  &>div {
+    display: grid;
+    text-align: center;
   }
 
-  & address {
-    display: grid;
-    grid-template-columns: 1fr repeat(2, auto);
-    column-gap: 10px;
-    margin-top: auto;
-    margin-bottom: 0.5em;
+  & a {
+    color: #454545;
+    border-bottom: none;
+    transition: all 0.5s;
+
+    &:hover {
+      color: #FFF;
+      background-color: inherit;
+      transition: all 0.5s;
+    }
   }
 
   & span {
     display: grid;
     place-content: center;
+  }
+
+  & address a {
+    display: inline-block;
+    margin: 0.5em;
   }
 
   @media (max-width: 650px) {
