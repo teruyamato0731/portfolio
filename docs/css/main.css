@@ -143,6 +143,49 @@ nav.in-page {
   }
 }
 
+.main>section>h2>a {
+  border: none;
+  color: lightgray;
+  font-size: 75%;
+  margin-left: 0.2em;
+  padding: 0.1em;
+  position: relative;
+
+  &::before {
+    font: var(--fa-font-solid);
+    content: "\f0c1";
+    transition: all 0.5s;
+  }
+
+  &::after {
+    content: attr(aria-label);
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    white-space: nowrap;
+    font-size: 50%;
+    transform: translate(-50%, 0);
+    background-color: rgb(24 49 83);
+    border-radius: 2px;
+    padding: 0.5em 1em;
+    pointer-events: none;
+    transition: all 0.5s;
+  }
+
+  &:hover {
+    background-color: inherit;
+
+    &::before {
+      color: gray;
+    }
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
 h4 {
   margin: 0;
 }
