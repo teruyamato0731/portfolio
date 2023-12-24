@@ -64,7 +64,7 @@ a {
   transition: background-color 0.5s;
 }
 
-a[href^="http"]:not(.no-link-icon):not(.to-github):not(.to-x-twitter)::after {
+a[href^="http"]:not(.no-link-icon):not(.to-github):not(.to-x-twitter):not(.to-instagram)::after {
   font: var(--fa-font-solid);
   content: "\f08e";
   padding-left: 0.4em;
@@ -79,14 +79,21 @@ a[href$=".pdf"]::after {
 a.to-github::after {
   font: var(--fa-font-brands);
   content: "\f09b";
-  font-size: 150%;
+  font-size: 175%;
   padding: 5px;
 }
 
 a.to-x-twitter::after {
   font: var(--fa-font-brands);
   content: "\e61b";
-  font-size: 150%;
+  font-size: 175%;
+  padding: 5px;
+}
+
+a.to-instagram::after {
+  font: var(--fa-font-brands);
+  content: "\f16d";
+  font-size: 175%;
   padding: 5px;
 }
 
