@@ -31,8 +31,11 @@ const copyURL = (e) => {
 };
 
 window.addEventListener("load", (event) => {
-  let birthday = new Date(document.getElementById("birthday").dateTime);
-  set_age(birthday);
+  let elm = document.getElementById("birthday");
+  if (elm) {
+    let birthday = new Date(elm.dateTime);
+    set_age(birthday);
+  }
 });
 
 window.addEventListener("load", (event) => {
@@ -43,7 +46,7 @@ window.addEventListener("load", (event) => {
     anchor.ariaLabel = "Copy URL";
     e.appendChild(anchor);
   });
-  document.querySelectorAll(".main>section").forEach((e) => {
+  document.querySelectorAll(".main>section:has(>h2)").forEach((e) => {
     let anchor = document.createElement("a");
     anchor.href = `#${e.id}`;
     anchor.addEventListener("click", copyURL);
