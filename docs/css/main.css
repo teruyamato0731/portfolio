@@ -143,6 +143,7 @@ nav.in-page {
   }
 }
 
+body>header h1>a,
 .main>section>h2>a {
   border: none;
   color: lightgray;

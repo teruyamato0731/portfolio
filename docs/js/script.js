@@ -36,6 +36,13 @@ window.addEventListener("load", (event) => {
 });
 
 window.addEventListener("load", (event) => {
+  document.querySelectorAll("body > header h1").forEach((e) => {
+    let anchor = document.createElement("a");
+    anchor.href = "#";
+    anchor.addEventListener("click", copyURL);
+    anchor.ariaLabel = "Copy URL";
+    e.appendChild(anchor);
+  });
   document.querySelectorAll(".main>section").forEach((e) => {
     let anchor = document.createElement("a");
     anchor.href = `#${e.id}`;
