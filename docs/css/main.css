@@ -28,6 +28,7 @@ body>footer {
   &>div {
     display: grid;
     text-align: center;
+    grid-template-rows: repeat(2, 1fr);
   }
 
   & a {
@@ -56,6 +57,10 @@ body>footer {
 
   @media (max-width: 650px) {
     grid-template-columns: 1fr;
+
+    &>div {
+      grid-template-rows: auto 1fr;
+    }
   }
 }
 
