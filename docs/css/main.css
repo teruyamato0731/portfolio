@@ -143,8 +143,7 @@ nav.in-page {
   }
 }
 
-body>header h1>a,
-.main>section>h2>a {
+:where(body>header h1, .main>section>h2)>a {
   border: none;
   color: lightgray;
   font-size: 75%;
@@ -163,7 +162,7 @@ body>header h1>a,
     opacity: 0;
     position: absolute;
     left: 50%;
-    bottom: 100%;
+    top: 100%;
     white-space: nowrap;
     font-size: 50%;
     transform: translate(-50%, 0);

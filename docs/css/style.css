@@ -46,14 +46,6 @@ img {
   border-radius: 5px;
 }
 
-red {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 100%;
-  letter-spacing: 0.05em;
-  color: var(--theme-color-1);
-}
-
 a {
   text-decoration: none;
   color: var(--theme-color-3);
@@ -62,9 +54,23 @@ a {
   border-radius: 4px;
   transition: color 0.5s;
   transition: background-color 0.5s;
+
+  &:hover {
+    background-color: var(--theme-color-1);
+    border-bottom: none;
+  }
 }
 
-a[href^="http"]:not(.no-link-icon):not(.to-github):not(.to-x-twitter):not(.to-instagram)::after {
+a img {
+  transition: all 0.5s;
+
+  &:hover {
+    transform: scale(1.05, 1.05);
+    transition: all 0.5s;
+  }
+}
+
+a[href^="http"]::after {
   font: var(--fa-font-solid);
   content: "\f08e";
   padding-left: 0.4em;
@@ -95,20 +101,6 @@ a.to-instagram::after {
   content: "\f16d";
   font-size: 175%;
   padding: 5px;
-}
-
-a:hover {
-  background-color: var(--theme-color-1);
-  border-bottom: none;
-}
-
-a img {
-  transition: all 0.5s;
-
-  &:hover {
-    transform: scale(1.05, 1.05);
-    transition: all 0.5s;
-  }
 }
 
 .icon::before {
