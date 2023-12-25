@@ -25,6 +25,14 @@ body>footer {
   margin-top: 0.5em;
   padding: 1em 30px 0.5em;
 
+  & nav {
+    margin: auto;
+
+    & ul {
+      margin-top: 0;
+    }
+  }
+
   &>div {
     display: grid;
     text-align: center;
