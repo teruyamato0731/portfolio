@@ -27,6 +27,8 @@ body>footer {
 
   & nav {
     margin: auto;
+    margin-left: 0;
+    font-size: 120%;
 
     & ul {
       margin-top: 0;

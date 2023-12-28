@@ -77,12 +77,13 @@ a[aria-label]:not([aria-label=""]) {
     border-radius: 2px;
     padding: 0.5em 1em;
     pointer-events: none;
-    transition: all 0.5s;
+    transition: all 1.5s;
     color: white;
   }
 
   &:hover::before {
     opacity: 1;
+    transition: all 0.5s;
   }
 }
 
