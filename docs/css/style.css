@@ -141,7 +141,7 @@ ul {
   margin-block-start: 0.7em;
   margin-block-end: 0.7em;
 
-  li {
+  & li {
     position: relative;
     padding: 0 0 0 1.6em;
     margin: 0;
