@@ -5,7 +5,8 @@
 	],
 	"service": "portfolio",
 	"workspaceFolder": "/workspaces/portfolio",
-	"remoteUser": "vscode"
+	"remoteUser": "vscode",
+	"postStartCommand": "./scripts/run-jekyll.bash"
 	// "customizations": {
 	// 	"vscode": {
 	// 		"extensions": []
