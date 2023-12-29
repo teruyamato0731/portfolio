@@ -1,0 +1,11 @@
+img {
+  width: 400px;
+  max-width: 100%;
+
+  div:has(>&) {
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 400px));
+    gap: 10px;
+  }
+}
