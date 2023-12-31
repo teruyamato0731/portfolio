@@ -94,6 +94,27 @@ a[aria-label]:not([aria-label=""]) {
     opacity: 1;
     transition: all 0.5s;
   }
+
+  &>span {
+    --triangle-size: 8px;
+    background-color: rgb(24 49 83);
+    width: var(--triangle-size);
+    height: var(--triangle-size);
+    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    pointer-events: none;
+    opacity: 0;
+    transition: all 1.5s;
+  }
+
+  &:is(:hover, :focus-within)>span {
+    opacity: 1;
+    transition: all 0.5s;
+  }
 }
 
 a[href^="http"]::after {

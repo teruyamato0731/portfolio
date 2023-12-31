@@ -39,6 +39,18 @@ body>footer {
     display: grid;
     text-align: center;
     grid-template-rows: repeat(2, 1fr);
+
+    &>span {
+      display: grid;
+      place-content: center;
+    }
+
+    &>address a {
+      display: inline-block;
+      padding: 0.2em;
+      margin: 0.3em;
+      margin-bottom: 1.7em;
+    }
   }
 
   & a {
@@ -51,18 +63,6 @@ body>footer {
       background-color: inherit;
       transition: all 0.5s;
     }
-  }
-
-  & span {
-    display: grid;
-    place-content: center;
-  }
-
-  & address a {
-    display: inline-block;
-    padding: 0.2em;
-    margin: 0.3em;
-    margin-bottom: 1.7em;
   }
 
   @media (max-width: 650px) {

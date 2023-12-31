@@ -53,4 +53,7 @@ window.addEventListener("load", (event) => {
     anchor.ariaLabel = "Copy URL";
     e.querySelector(":scope > h2").appendChild(anchor);
   });
+  document.querySelectorAll("a[aria-label]:not([aria-label=''])").forEach((e) => {
+    e.appendChild(document.createElement("span"));
+  });
 });
