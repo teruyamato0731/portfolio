@@ -55,9 +55,18 @@ a {
   transition: color 0.5s;
   transition: background-color 0.5s;
 
-  &:hover {
+  & img {
+    transition: all 0.5s;
+  }
+
+  &:is(:hover, :focus-within) {
     background-color: var(--theme-color-1);
     border-bottom: none;
+
+    & img {
+      transform: scale(1.05, 1.05);
+      transition: all 0.5s;
+    }
   }
 }
 
@@ -81,17 +90,8 @@ a[aria-label]:not([aria-label=""]) {
     color: white;
   }
 
-  &:hover::before {
+  &:is(:hover, :focus-within)::before {
     opacity: 1;
-    transition: all 0.5s;
-  }
-}
-
-a img {
-  transition: all 0.5s;
-
-  &:hover {
-    transform: scale(1.05, 1.05);
     transition: all 0.5s;
   }
 }
