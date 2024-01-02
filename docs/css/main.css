@@ -32,6 +32,18 @@ body>footer {
 
     & ul {
       margin-top: 0;
+
+      & li {
+        &::before {
+          content: "\f105";
+          transition: transform 0.5s;
+        }
+
+        &:has(:is(:hover, :focus-within))::before {
+          transform: translateX(0.3em);
+          transition: transform 0.5s;
+        }
+      }
     }
   }
 

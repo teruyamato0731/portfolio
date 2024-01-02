@@ -3,7 +3,7 @@ section#About>div {
   grid-template-columns: 1fr auto;
   grid-gap: 5px;
 
-  &>div {
+  &>div:first-of-type {
     grid-row: 1;
     grid-column: 2;
     padding: 10px 20px;
@@ -19,20 +19,43 @@ section#About>div {
       min-width: 100px;
     }
 
-
     @media (min-width: 450px) and (max-width: 600px) {
       grid-template-columns: auto;
     }
   }
 
-  & span {
-    display: inline-block;
-  }
-
-  &>p {
+  &>div:nth-of-type(2) {
     margin: 10px 20px;
     grid-row: 2;
     grid-column: 2;
+
+    &>p {
+      margin: 0;
+
+      &:nth-of-type(2) {
+        text-align: right;
+      }
+
+      & a {
+        &::before {
+          font: var(--fa-font-solid);
+          content: "\f105";
+          display: inline-block;
+          transition: transform 0.5s;
+          padding-left: 0.2em;
+          padding-right: 0.4em;
+        }
+
+        &:is(:hover, :focus-within)::before {
+          transform: translateX(0.3em);
+          transition: transform 0.5s;
+        }
+      }
+    }
+  }
+
+  & span {
+    display: inline-block;
   }
 
   &>img {
@@ -69,7 +92,7 @@ section#About>div {
       grid-row: 1;
     }
 
-    &>div {
+    &>div:first-of-type {
       grid-column: 1;
       grid-row: 2;
     }
@@ -79,7 +102,7 @@ section#About>div {
       grid-row: 3;
     }
 
-    & p {
+    &>div:nth-of-type(2) {
       grid-column: 1;
       grid-row: 4;
     }
@@ -95,6 +118,20 @@ section#Works>div {
     background-color: inherit;
     border-radius: inherit;
     padding: 0.5em;
+
+    &::before {
+      font: var(--fa-font-solid);
+      content: "\f105";
+      display: inline-block;
+      transition: transform 0.5s;
+      padding-left: 0.2em;
+      padding-right: 0.4em;
+    }
+  }
+
+  & a:is(:hover, :focus-within) h4::before {
+    transform: translateX(0.3em);
+    transition: transform 0.5s;
   }
 
   & article img {
