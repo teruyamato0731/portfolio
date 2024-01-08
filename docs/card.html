@@ -4,65 +4,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="canonical" href="https://teruyamato0731.github.io/portfolio/chassis">
+  <link rel="canonical" href="https://teruyamato0731.github.io/portfolio/card">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
   <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
+  <link href="css/kisoken.css" rel="stylesheet" type="text/css" media="all">
   <script src="js/script.js" async></script>
-  <title>Yoshikawa Teru | Chassis</title>
+  <title>Yoshikawa Teru | デジタル名刺</title>
   <link rel="icon" href="favicon.ico">
+  <style type="text/css">
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(auto, 450px));
+      row-gap: 10px;
+      column-gap: 10px;
+      place-content: center;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  </style>
 </head>
 
 <body>
   <header>
-    <h1>Chassis</h1>
+    <h1>Yoshikawa Teru</h1>
     <nav class="hamburger-button">
       <label>
         <input type="checkbox">
       </label>
     </nav>
     <nav class="in-page">
-      <a href="#About">About</a>
-      <a href="#Features">Features</a>
-      <a href="#Environment">Environment</a>
+      <a href="#">TOP</a>
+      <a href="#Card">Card</a>
     </nav>
   </header>
   <div class="main">
-    <section id="About">
-      <h2>About</h2>
-      <p>
-        高専在学中にロボコンで使用するために自作したOSSです。
-        MITライセンスで公開しています。
-      </p>
-      <div>
-        <video controls playsinline muted autoplay style="max-width: 100%;" src="./img/4wd.mp4"></video>
+    <section id="Card">
+      <h2>デジタル名刺</h2>
+      <div class="cards">
+        <picture>
+          <source type="image/webp" srcset="./img/card2023_1.webp">
+          <img src="./img/card2023_1.jpg" alt="名刺表面">
+        </picture>
+        <picture>
+          <source type="image/webp" srcset="./img/card2023_2.webp">
+          <img src="./img/card2023_2.jpg" alt="名刺裏面">
+        </picture>
       </div>
-      <p>
-        Chassisはロボコンでの足回り制御を行うためのC++ライブラリである。 ロボコン用足回りのモータ出力計算と自己位置推定による自動制御をサポートする。
-      </p>
-      <a target="_blank" href="https://teruyamato0731.github.io/Chassis/">https://teruyamato0731.github.io/Chassis/</a>
-    </section>
-    <section id="Features">
-      <h2>Features</h2>
-      <ul>
-        <li>三輪オムニや四輪オムニ、メカナム、四輪独立ステアリングなどのモータ出力計算に対応。</li>
-        <li>エンコーダのオドメトリを用いた自己位置推定に対応。</li>
-        <li>
-          <span>自己位置推定とPID制御による自動制御に対応。</span>
-          <span>自己位置推定は任意のセンサとフィルタの組み合わせで実装できる。</span>
-        </li>
-      </ul>
-      </p>
-    </section>
-    <section id="Environment">
-      <h2>Supported Environment</h2>
-      <ul>
-        <li>Platform IO の入った VSCode。もしくは Arduino IDE。</li>
-        <li>C++で動くフレームワークとマイコン。</li>
-        <li>ArduinoやMbedで動くnucleo, esp32, teensyなどに対応。</li>
-      </ul>
     </section>
   </div>
   <footer>
