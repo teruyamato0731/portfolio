@@ -189,3 +189,7 @@ section#Career article {
     }
   }
 }
+
+time::before {
+  content: attr(datetime);
+}
