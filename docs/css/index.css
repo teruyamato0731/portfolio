@@ -114,7 +114,7 @@ section#Works>div {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   column-gap: 3px;
 
-  & a h4 {
+  & a h3 {
     background-color: inherit;
     border-radius: inherit;
     padding: 0.5em;
@@ -129,7 +129,7 @@ section#Works>div {
     }
   }
 
-  & a:is(:hover, :focus-within) h4::before {
+  & a:is(:hover, :focus-within) h3::before {
     transform: translateX(0.3em);
     transition: transform 0.5s;
   }

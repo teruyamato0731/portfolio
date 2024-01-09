@@ -1,4 +1,4 @@
-:where(h1, h2, h3)::before {
+:where(h1, h2)::before {
   font: var(--fa-font-regular);
   content: "\23";
   font-size: 100%;
@@ -199,7 +199,7 @@ nav.in-page {
   }
 }
 
-h4 {
+h3 {
   margin: 0;
 }
 
