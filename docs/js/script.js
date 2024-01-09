@@ -46,7 +46,7 @@ window.addEventListener("load", (event) => {
     anchor.ariaLabel = "Copy URL";
     e.appendChild(anchor);
   });
-  document.querySelectorAll(".main>section:has(>h2)").forEach((e) => {
+  document.querySelectorAll("main>section:has(>h2)").forEach((e) => {
     let anchor = document.createElement("a");
     anchor.href = `#${e.id}`;
     anchor.addEventListener("click", copyURL);

@@ -13,7 +13,7 @@ body>header {
   max-width: calc(100vw - 60px);
 }
 
-body>div.main {
+body>main {
   margin: 0 30px;
   max-width: calc(100vw - 60px);
 }
@@ -172,7 +172,7 @@ nav.in-page {
   }
 }
 
-:is(body>header h1, .main>section>h2)>a {
+:is(body>header h1, main>section>h2)>a {
   border: none;
   color: lightgray;
   font-size: 75%;
