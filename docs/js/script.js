@@ -1,3 +1,10 @@
+const $ = (selector) => document.querySelector(selector);
+
+/**
+ * 誕生日から年齢を計算する。
+ * @param {Date} birthday 誕生日
+ * @returns number 年齢
+ */
 const calc_age = (birthday) => {
   let today = new Date();
   let age = today.getFullYear() - birthday.getFullYear();
@@ -6,13 +13,11 @@ const calc_age = (birthday) => {
   return age;
 }
 
-const set_age = (birthday) => {
-  let age = document.getElementById("age");
-  age.innerText = `（${calc_age(birthday)}歳）`;
-}
-
-function copyText(text) {
-  // console.log(text);
+/**
+ * テキストをクリップボードにコピーする。
+ * @param {string} text このテキストをクリップボードにコピーする。
+ */
+const copyText = (text) => {
   let element = document.createElement('input');
   element.value = text;
   document.body.appendChild(element);
@@ -21,8 +26,11 @@ function copyText(text) {
   document.body.removeChild(element);
 }
 
+/**
+ * クリックされた要素のhref属性の値をクリップボードにコピーする。
+ * @param {MouseEvent} e クリックイベント
+ */
 const copyURL = (e) => {
-  // console.log(e.target);
   copyText(e.target.href);
   e.target.ariaLabel = "Copied";
   setTimeout(() => {
@@ -31,10 +39,10 @@ const copyURL = (e) => {
 };
 
 window.addEventListener("load", (event) => {
-  let elm = document.getElementById("birthday");
+  let elm = $("#birthday");
   if (elm) {
     let birthday = new Date(elm.dateTime);
-    set_age(birthday);
+    $("#age").innerText = `（${calc_age(birthday)}歳）`;
   }
 });
 
