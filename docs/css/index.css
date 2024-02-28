@@ -115,10 +115,16 @@ section#Works>div {
   grid-template-columns: repeat(auto-fit, minmax(var(--column-width), 1fr));
   column-gap: 3px;
 
+  & a {
+    border: none;
+  }
+
   & a h3 {
     background-color: inherit;
     border-radius: inherit;
     padding: 0.5em;
+    border: 1px solid;
+    margin-bottom: 3px;
 
     &::before {
       font: var(--fa-font-solid);
