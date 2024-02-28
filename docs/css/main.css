@@ -191,7 +191,7 @@ nav.in-page {
   &::after {
     font: var(--fa-font-solid);
     content: "\f0c1";
-    transition: all 0.5s;
+    transition: color 0.5s;
   }
 
   &:focus-visible,
