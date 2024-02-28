@@ -5,6 +5,7 @@ html {
   --theme-color-1: #ffea00;
   --theme-color-2: #999;
   --theme-color-3: #0067C0;
+  --horizon-gap: 18px;
   color: #454545;
   scroll-behavior: smooth;
   height: 100%;
@@ -28,6 +29,10 @@ h1 {
   letter-spacing: 0.05em;
   font-weight: normal;
   padding: 0 0.5em;
+
+  @media screen and (max-width: 767px) {
+    font-size: 1.5em;
+  }
 }
 
 h2 {
@@ -37,6 +42,10 @@ h2 {
   font-weight: normal;
   padding: 0 0.5em;
   border-bottom: 3px solid var(--theme-color-2);
+
+  @media screen and (max-width: 767px) {
+    font-size: 1.5em;
+  }
 }
 
 h3 {
