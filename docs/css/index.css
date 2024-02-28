@@ -116,6 +116,7 @@ section#Works>div {
   --column-width: 270px;
   grid-template-columns: repeat(auto-fit, minmax(var(--column-width), 1fr));
   column-gap: 3px;
+  row-gap: 0.8em;
 
   & a {
     border: none;
