@@ -111,7 +111,8 @@ section#About>div {
 
 section#Works>div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  --column-width: 270px;
+  grid-template-columns: repeat(auto-fit, minmax(var(--column-width), 1fr));
   column-gap: 3px;
 
   & a h3 {
@@ -135,7 +136,7 @@ section#Works>div {
   }
 
   & article img {
-    min-width: 240px;
+    min-width: var(--column-width);
     width: 100%;
   }
 }
