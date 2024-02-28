@@ -71,7 +71,7 @@ a {
   }
 }
 
-a[aria-label]:not([aria-label=""]) {
+a:where([aria-label]:not([aria-label=""])) {
   position: relative;
 
   &::before {
