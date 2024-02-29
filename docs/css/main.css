@@ -233,6 +233,35 @@ h3 {
   }
 }
 
+#guide-next {
+  display: flex;
+  padding: 0.5em 0;
+
+  & a {
+    margin: 0 1rem;
+    padding: 0.5rem 1em;
+    border: 2px solid;
+  }
+
+  .next {
+    margin-left: auto;
+  }
+
+  .prev::before {
+    font: var(--fa-font-solid);
+    content: "\f104";
+    font-weight: bold;
+    padding-right: 0.5em;
+  }
+
+  .next::after {
+    font: var(--fa-font-solid);
+    content: "\f105";
+    font-weight: bold;
+    padding-left: 0.5em;
+  }
+}
+
 #to-top {
   position: fixed;
   bottom: 40px;
