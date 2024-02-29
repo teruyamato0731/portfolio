@@ -56,10 +56,6 @@ img {
   border-radius: 5px;
 }
 
-picture {
-  display: contents;
-}
-
 a {
   text-decoration: none;
   color: var(--theme-color-3);
