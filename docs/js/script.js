@@ -38,6 +38,23 @@ const copyURL = (e) => {
   }, 2000);
 };
 
+const setDialog = () => {
+  document.querySelectorAll('.popup-img').forEach((e) => {
+    const dialog = document.createElement('dialog');
+    const childImg = e.cloneNode(true);
+    childImg.classList.remove('popup-img')
+    dialog.appendChild(childImg);
+    dialog.addEventListener('click', () => {
+      dialog.close();
+    });
+    console.log(e);
+    e.parentNode.insertBefore(dialog, e.nextSibling);
+    e.addEventListener('click', () => {
+      dialog.showModal();
+    });
+  });
+}
+
 window.addEventListener("load", (event) => {
   let elm = $("#birthday");
   if (elm) {
@@ -64,4 +81,5 @@ window.addEventListener("load", (event) => {
   document.querySelectorAll("a[aria-label]:not([aria-label=''])").forEach((e) => {
     e.appendChild(document.createElement("span"));
   });
+  setDialog();
 });

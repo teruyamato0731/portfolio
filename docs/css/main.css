@@ -208,6 +208,31 @@ h3 {
   margin: 0;
 }
 
+.popup-img {
+  cursor: zoom-in;
+
+  &+dialog {
+    cursor: zoom-out;
+    padding: 0;
+    border: none;
+
+    &[open] {
+      display: grid;
+    }
+
+    &::backdrop {
+      background-color: rgba(0 0 0 / 50%);
+    }
+
+    & img,
+    & picture {
+      max-height: 90vh;
+      max-width: 90vh;
+      border-radius: 0;
+    }
+  }
+}
+
 #to-top {
   position: fixed;
   bottom: 40px;
